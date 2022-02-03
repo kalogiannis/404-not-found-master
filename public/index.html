@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+      }
+      .wrapper{
+        width:100vw;
+        height:100vh;
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: 100px 1fr 40px;;
+        grid-template-areas:
+          "header header"
+          "img text"
+          "footer footer";
+      }
+      h1{
+        margin:40px 0 0 77px ;
+        grid-area:header;
+        width: 333px;
+        height: 25px;
+        font-family: Inconsolata;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        color: #333333;
+      }
+      img{
+        width: 100%;
+        min-width:300px;
+        height:auto
+      }
+      .img{
+        margin:200px 77px;
+        grid-area:img;
+      }
+      .text{
+        margin:200px 19px 0;
+        grid-area:text;
+      }
+      footer{
+        grid-area:footer;
+      }
+      .text h2{
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 95px;
+        letter-spacing: -0.035em;
+        color: #333333;
+      }
+      .text p{
+        margin:36px 0 64px;
+        width: 381px;
+        height: 108px;
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+        color: #4F4F4F;
+      }
+      .text button{
+        background: #333333;
+        padding:24px 43px 23px;
+        border:none;
+        color:white;
+        text-transform: uppercase;
+        
+      }
+      footer{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #BDBDBD;
+        text-align:center;
+      }
+
+      @media(max-width:375px){
+       
+        .wrapper{
+          grid-template-rows: 100px 1fr 1fr 40px;;
+          grid-template-areas:
+          "header header"
+          "img img"
+          "text text"
+          "footer footer";
+        }
+        h1{
+          margin: 0 auto;
+        }
+        .img{
+          margin:20px auto;
+       }
+       button{
+          margin-bottom: 50px;
+       }
+      }
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <h1 >404 NOT FOUND</h1>
+        <div class="img">
+             <img src="./Scarecrow.png" alt=""> 
+        </div>
+        <div class="text">
+             <h2>I have bad news for you </h2>
+             <p>TThe page you are looking for might be removed or is temporarily unavailable </p>
+             <button>Back to homepage </button>
+        </div>
+        <footer>created by giannis  - devChallenges.io </footer>
+    </section>
+    
+</body>
+</html>
