@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://page-a6b52.web.app/">
+    <a href="https://page-a6b52.firebaseapp.com/">
       Demo
     </a>
     <span> | </span>
